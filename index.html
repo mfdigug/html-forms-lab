@@ -5,44 +5,54 @@
     <link rel="stylesheet" href="style.css">
     <title>My Awesome Company Contact Page</title>
   </head>
-  <body>
 
+  <body>
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+     <form action="" method="post">
 
+      <fieldset>
 
-      <!-- Add a label for 'fullname'-->
+        <legend>Personal Information</legend>
 
-      <!-- Add a text input with the id and name attributes set to 'fullname' -->
-      <!-- Include the place holder text "Enter Name" and make this input required -->
+          <label for="fullname">Full Name
+            <input type="text" name="fullName" id="fullName" placeholder="Enter Name" required> 
+          </label>  
 
+          <label for="email">Email
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+          </label>
 
-      <!-- Add a label for 'email'-->
+          <label for="phone">Phone
+            <input type="tel" name="phone" id="phone" placeholder="Enter Telephone">
+          </label>
 
-      <!-- Add a email input with the id and name attributes set to 'email' -->
-      <!-- Include the place holder text "Enter Email" and make this input required -->
+          <label for="message">Message
+            <textarea name="message" id="message">Enter Message</textarea>
+          </label>
 
+      </fieldset>
+      
+      <fieldset>
 
-      <!-- Add a label for 'phone'-->
+        <legend>Do you like...?</legend>     
+          
+          <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox">Pina Coladas
+          </label>
+              
+          <label for="rain"><input type="checkbox" name="rain" id="rain">Getting caught in the rain</label>
+        
+          <label for="ocean"><input type="checkbox" name="ocean" id="ocean">The feel of the ocean</label>
+          
+          <label for="champagne"><input type="checkbox" name="champagne" id="champagne">The taste of champagne</label>
+        
+      </fieldset>
+      
+      <input type="submit" value="Submit">
+      
+     </form>
 
-      <!-- Add a telephone input with the id and name attributes set to 'phone' -->
-      <!-- Include the place holder text "Enter Telephone (optional)" -->
-
-
-      <!-- Add a label for 'message'-->
-
-      <!-- Add a textarea tag with the id and name attributes set to 'message' -->
-      <!-- Include the place holder text "Enter Message" -->
-
-
-      <!-- Add a checkbox input with the id set to 'checkbox' -->
-
-
-
-      <!-- Add an input with the type set to 'submit' -->
-
-    
   </body>
+  
 </html>
